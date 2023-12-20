@@ -22,5 +22,5 @@ ARG PUBLIC_PATH
 WORKDIR /srv
 COPY --from=builder /app/dist/spa/ .${PUBLIC_PATH}
 
-EXPOSE 80
+EXPOSE 433
 CMD ["caddy", "file-server"]
